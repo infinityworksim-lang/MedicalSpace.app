@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedicalSpace | Account & Data Deletion</title>
+
+    <meta name="description"
+          content="Learn how to request deletion of your MedicalSpace account and associated personal data.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="MANA LLC">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="assets/brand-mark-180.png">
+
+    
+
+
+    <style>
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #0f172a;
+            --accent: #06b6d4;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gray-light: #e2e8f0;
+            --white: #ffffff;
+
+            --transition: all 0.3s ease;
+            --shadow: 0 10px 25px rgba(15, 23, 42, 0.10);
+            --radius: 12px;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            background: var(--light);
+            color: var(--secondary);
+            line-height: 1.7;
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            background: rgba(255,255,255,0.98);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+
+        .logo img {
+            height: 70px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+
+        .back-link {
+            color: var(--secondary);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            padding: 170px 0 80px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(6,182,212,0.18),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #eff6ff 0%,
+                    #ecfeff 100%
+                );
+        }
+
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+
+        .product-badge {
+            display: inline-block;
+
+            background: rgba(37,99,235,0.10);
+
+            color: var(--primary);
+
+            padding: 8px 16px;
+
+            border-radius: 30px;
+
+            font-size: 0.85rem;
+
+            font-weight: 700;
+
+            margin-bottom: 20px;
+        }
+
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+
+        .hero p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+
+        /* =========================
+           CONTENT
+        ========================== */
+
+        .section {
+            padding: 80px 0;
+        }
+
+
+        .content-card {
+            background: var(--white);
+
+            border: 1px solid var(--gray-light);
+
+            border-radius: 16px;
+
+            padding: 40px;
+
+            margin-bottom: 25px;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .content-card h2 {
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+        }
+
+
+        .content-card h3 {
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+
+        .content-card p {
+            color: var(--gray);
+        }
+
+
+        .content-card ul {
+            margin: 15px 0 20px 25px;
+            color: var(--gray);
+        }
+
+
+        .content-card li {
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           STEPS
+        ========================== */
+
+        .steps {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(230px, 1fr));
+
+            gap: 20px;
+
+            margin-top: 25px;
+        }
+
+
+        .step {
+            background: var(--light);
+
+            border-radius: 12px;
+
+            padding: 25px;
+
+            border: 1px solid var(--gray-light);
+        }
+
+
+        .step-number {
+            width: 45px;
+            height: 45px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--accent)
+                );
+
+            color: white;
+
+            font-weight: 700;
+
+            margin-bottom: 15px;
+        }
+
+
+        .step h3 {
+            margin-bottom: 8px;
+        }
+
+
+        .step p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           EMAIL BOX
+        ========================== */
+
+        .email-box {
+            margin-top: 25px;
+
+            padding: 30px;
+
+            border-radius: 12px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eff6ff,
+                    #ecfeff
+                );
+
+            border: 1px solid #bfdbfe;
+
+            text-align: center;
+        }
+
+
+        .email-box i {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+
+
+        .email-box p {
+            margin-bottom: 8px;
+        }
+
+
+        .email-box a {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.15rem;
+        }
+
+
+        .email-box a:hover {
+            color: var(--primary-dark);
+        }
+
+
+        /* =========================
+           NOTICE
+        ========================== */
+
+        .notice {
+            padding: 20px 25px;
+
+            border-left: 4px solid var(--primary);
+
+            background: #eff6ff;
+
+            border-radius: 8px;
+
+            margin-top: 25px;
+        }
+
+
+        .notice p {
+            margin: 0;
+            color: #334155;
+        }
+
+
+        /* =========================
+           DATA GRID
+        ========================== */
+
+        .data-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(260px, 1fr));
+
+            gap: 20px;
+
+            margin-top: 25px;
+        }
+
+
+        .data-item {
+            padding: 25px;
+
+            background: var(--light);
+
+            border-radius: 12px;
+
+            border: 1px solid var(--gray-light);
+        }
+
+
+        .data-item i {
+            font-size: 2rem;
+
+            color: var(--primary);
+
+            margin-bottom: 15px;
+        }
+
+
+        .data-item h3 {
+            margin-bottom: 8px;
+        }
+
+
+        .data-item p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================== */
+
+        .btn {
+            display: inline-block;
+
+            padding: 13px 28px;
+
+            background: var(--primary);
+
+            color: white;
+
+            border-radius: var(--radius);
+
+            font-size: 1rem;
+
+            font-weight: 600;
+
+            transition: var(--transition);
+
+            border: 2px solid var(--primary);
+
+            margin-top: 20px;
+        }
+
+
+        .btn:hover {
+            background: var(--primary-dark);
+
+            border-color: var(--primary-dark);
+
+            transform: translateY(-3px);
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+        }
+
+
+        .btn-outline:hover {
+            color: white;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: var(--secondary);
+
+            color: white;
+
+            padding: 45px 0 20px;
+
+            margin-top: 30px;
+        }
+
+
+        .footer-content {
+            display: flex;
+
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+
+            gap: 40px;
+
+            margin-bottom: 35px;
+        }
+
+
+        .footer-column {
+            flex: 1;
+            min-width: 220px;
+        }
+
+
+        .footer-column h4 {
+            margin-bottom: 15px;
+        }
+
+
+        .footer-column p {
+            color: #cbd5e1;
+        }
+
+
+        .footer-links {
+            list-style: none;
+        }
+
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+
+        .footer-links a {
+            color: #cbd5e1;
+            transition: var(--transition);
+        }
+
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+
+            padding-top: 20px;
+
+            text-align: center;
+
+            color: #94a3b8;
+
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: 94%;
+            }
+
+
+            .hero {
+                padding-top: 140px;
+            }
+
+
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+
+
+            .content-card {
+                padding: 25px;
+            }
+
+
+            .logo img {
+                height: 55px;
+            }
+
+
+            .back-link {
+                font-size: 0.9rem;
+            }
+
+        }
+
+    </style>
+
+<style>
+:root{--primary:#d9b76d;--primary-dark:#b99650;--secondary:#f5f6f3;--accent:#d9b76d;--light:#071620;--gray:#a8b7c0;--gray-light:#29404c;--white:#102532}
+body{background:#071620!important;color:#f5f6f3!important}header,footer,.hero,.legal-page{background:#071620!important;color:#f5f6f3!important}
+.content-card,.legal-card,.card,.important-notice,.notice,.toc,.contact-box,.info-box,.warning-box{background:#102532!important;color:#f5f6f3!important;border:1px solid #d9b76d44!important}
+h1,h2,h3,h4,.logo{color:#d9b76d!important}p,li,td,th{color:inherit}a{color:#e6c984}header img{object-fit:contain}a:focus-visible{outline:2px solid #d9b76d;outline-offset:4px}
+</style><style>
+.legal-content,.highlight-box,.important-note,.security-box,.email-box,.product-badge{background:#102532!important;color:#f5f6f3!important;border-color:#c0a76e66!important}
+.legal-content p,.legal-content li,.content-card p,.content-card li,.notice p,.important-notice p,.email-box p{color:#d4dde4!important}
+.legal-content a,.content-card a,.notice a{color:#ead39b!important}
+.legal-content strong,.content-card strong{color:#f5f6f3}
+.legal-content .update-date,.legal-subtitle{color:#a8b7c0!important}
+header .navbar .logo img{max-height:64px;max-width:90px;object-fit:contain}
+.last-updated,.last-updated strong{color:#a8b7c0!important}
+</style></head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <a href="medicalspace.html" class="logo">
+
+                <img src="assets/mana-mark.webp"
+                     alt="MANA LLC Logo">
+
+                MANA LLC
+
+            </a>
+
+
+            <a href="medicalspace.html"
+               class="back-link">
+
+                <i class="fas fa-arrow-left"></i>
+
+                MedicalSpace
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="product-badge">
+
+                <i class="fas fa-user-shield"></i>
+
+                MedicalSpace Account Management
+
+            </div>
+
+
+            <h1>
+
+                Account &
+
+                <span>Data Deletion</span>
+
+            </h1>
+
+
+            <p>
+
+                This page explains how MedicalSpace users can request
+                deletion of their account and associated personal data.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTENT
+========================== -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <!-- =========================
+             REQUEST DELETION
+        ========================== -->
+
+        <div class="content-card">
+
+            <h2>
+                Request Account Deletion
+            </h2>
+
+
+            <p>
+                MedicalSpace currently processes account deletion
+                requests through MANA LLC support.
+            </p>
+
+
+            <p>
+                To request deletion of your MedicalSpace account and
+                associated data, send an email to the address below
+                using the email address associated with your account,
+                whenever possible.
+            </p>
+
+
+            <div class="email-box">
+
+                <i class="fas fa-envelope"></i>
+
+                <p>
+                    Send your account deletion request to:
+                </p>
+
+
+                <a href="mailto:info@mana-co.com?subject=MedicalSpace%20Account%20Deletion%20Request">
+
+                    info@mana-co.com
+
+                </a>
+
+            </div>
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <h3>
+                        Send the Request
+                    </h3>
+
+                    <p>
+                        Send an email requesting deletion of your
+                        MedicalSpace account and associated data.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <h3>
+                        Account Verification
+                    </h3>
+
+                    <p>
+                        MANA LLC may verify your identity and account
+                        ownership before processing the request.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <h3>
+                        Deletion Processing
+                    </h3>
+
+                    <p>
+                        After verification, eligible account data will
+                        be processed for deletion according to applicable
+                        policies and requirements.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="notice">
+
+                <p>
+
+                    <strong>Important:</strong>
+
+                    For security reasons, MANA LLC may request
+                    additional information when necessary to verify
+                    ownership of the MedicalSpace account before
+                    processing a deletion request.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             DATA THAT MAY BE DELETED
+        ========================== -->
+
+        <div class="content-card">
+
+            <h2>
+                Data That May Be Deleted
+            </h2>
+
+
+            <p>
+                Depending on the account and the information associated
+                with it, an approved deletion request may include
+                deletion of eligible data such as:
+            </p>
+
+
+            <div class="data-grid">
+
+
+                <div class="data-item">
+
+                    <i class="fas fa-user"></i>
+
+                    <h3>
+                        Account Information
+                    </h3>
+
+                    <p>
+                        Account and profile information associated with
+                        the MedicalSpace user account.
+                    </p>
+
+                </div>
+
+
+                <div class="data-item">
+
+                    <i class="fas fa-database"></i>
+
+                    <h3>
+                        Account-Associated Data
+                    </h3>
+
+                    <p>
+                        Eligible data associated with the user's
+                        MedicalSpace account.
+                    </p>
+
+                </div>
+
+
+                <div class="data-item">
+
+                    <i class="fas fa-comments"></i>
+
+                    <h3>
+                        User Content
+                    </h3>
+
+                    <p>
+                        Eligible user-generated content associated
+                        with the account may be deleted where applicable.
+                    </p>
+
+                </div>
+
+
+                <div class="data-item">
+
+                    <i class="fas fa-cog"></i>
+
+                    <h3>
+                        Account Settings
+                    </h3>
+
+                    <p>
+                        Account preferences and other eligible
+                        account-related information may be removed.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             RETENTION
+        ========================== -->
+
+        <div class="content-card">
+
+            <h2>
+                Information That May Be Retained
+            </h2>
+
+
+            <p>
+                Certain information may need to be retained for a
+                limited period when required for legal, regulatory,
+                security, fraud-prevention, financial, accounting,
+                dispute-resolution, or other legitimate purposes.
+            </p>
+
+
+            <p>
+                Where retention is required, MANA LLC will retain the
+                information only for the period necessary for the
+                applicable purpose and handle it according to its
+                privacy and data-management practices.
+            </p>
+
+
+            <p>
+                Account deletion does not necessarily remove information
+                that MANA LLC is legally required or otherwise permitted
+                to retain.
+            </p>
+
+        </div>
+
+
+
+        <!-- =========================
+             PRIVACY POLICY
+        ========================== -->
+
+        <div class="content-card">
+
+            <h2>
+                Privacy Policy
+            </h2>
+
+
+            <p>
+                For more information about the information collected
+                by MedicalSpace, how it is used, stored, protected,
+                and disclosed, please review the MedicalSpace Privacy
+                Policy.
+            </p>
+
+
+            <a href="privacy.html"
+               class="btn btn-outline">
+
+                <i class="fas fa-shield-alt"></i>
+
+                View Privacy Policy
+
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <div class="content-card">
+
+            <h2>
+                Need Help?
+            </h2>
+
+
+            <p>
+                If you have questions about your MedicalSpace account,
+                account deletion, or data deletion, please contact
+                MANA LLC.
+            </p>
+
+
+            <div class="email-box">
+
+                <i class="fas fa-envelope"></i>
+
+                <p>
+                    MedicalSpace Support
+                </p>
+
+
+                <a href="mailto:info@mana-co.com">
+
+                    info@mana-co.com
+
+                </a>
+
+            </div>
+
+
+            <div style="text-align:center;">
+
+                <a href="medicalspace.html"
+                   class="btn">
+
+                    <i class="fas fa-arrow-left"></i>
+
+                    Back to MedicalSpace
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h4>
+                    MANA LLC
+                </h4>
+
+                <p>
+                    Healthcare technology company developing software
+                    solutions for healthcare professionals, clinics,
+                    hospitals, and diagnostic organizations.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    MedicalSpace
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="medicalspace.html">
+                            MedicalSpace
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="medicalspace.html#features">
+                            Features
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="medicalspace.html#ai">
+                            AI
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="medicalspace.html#team">
+                            Security
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Legal
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="medicalspace-delete-account.html">
+                            Account & Data Deletion
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+
+                        <i class="fas fa-envelope"></i>
+
+                        <a href="mailto:info@mana-co.com">
+                            info@mana-co.com
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fas fa-map-marker-alt"></i>
+
+                        Colorado, USA
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                &copy; 2026 MANA LLC. All rights reserved.
+                MedicalSpace is a product of MANA LLC.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
