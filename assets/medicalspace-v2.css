@@ -337,3 +337,9 @@ dialog>img{width:min(720px,100%);height:auto;max-height:none}
 @media(max-width:800px){.capture-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.capture-gallery,.capture-gallery-team{grid-template-columns:1fr}.capture-shot{max-width:410px;width:100%;margin-inline:auto}.capture-intro h2{font-size:30px}}
 .feature-capture-section{scroll-margin-top:100px}
+
+/* Paired original/translated captures, preserving native screenshot pixels. */
+.capture-gallery-chat{grid-template-columns:repeat(2,minmax(0,1fr));max-width:900px;margin-inline:auto}
+.chat-pair+.chat-pair{margin-top:56px}
+.chat-pair-title{font-size:22px;color:var(--gold-light);text-align:center;margin:0 0 24px}
+@media(max-width:600px){.capture-gallery-chat{grid-template-columns:1fr}.chat-pair-title{font-size:20px}}
