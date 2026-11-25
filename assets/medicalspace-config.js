@@ -1,2 +1,2 @@
-// Replace this URL with the final app download/store URL when ready.
-window.MedicalSpaceConfig = { downloadUrl: 'https://mana-co.com/medicalspace.html' };
+// Production launch destination. Publish the app in Play Console before deploying this launch-ready site.
+window.MedicalSpaceConfig = {"downloadUrl": "https://play.google.com/store/apps/details?id=com.manaco.medicalspace"};
