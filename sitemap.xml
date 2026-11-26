@@ -21,4 +21,52 @@
   <url>
     <loc>https://medicalspace.app/medicalspace-delete-account.html</loc>
   </url>
+  <url>
+    <loc>https://medicalspace.app/patient-records.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/patient-records-ar.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/patient-records-fr.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/patient-records-tr.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/medical-ai-assistant.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/medical-ai-assistant-ar.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/medical-ai-assistant-fr.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/medical-ai-assistant-tr.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/team-permissions.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/team-permissions-ar.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/team-permissions-fr.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/team-permissions-tr.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/doctor-chat-translation.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/doctor-chat-translation-ar.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/doctor-chat-translation-fr.html</loc>
+  </url>
+  <url>
+    <loc>https://medicalspace.app/doctor-chat-translation-tr.html</loc>
+  </url>
 </urlset>
